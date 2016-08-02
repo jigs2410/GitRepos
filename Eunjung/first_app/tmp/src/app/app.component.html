@@ -1,0 +1,34 @@
+<h1>
+  {{title}}
+</h1>
+<!-- Menu Bar -->
+<div class="ui menu">
+  <div class="ui container">
+    <a href="#" class="header item">
+      <img class="logo" src="resources/images/ng-book-2-minibook.png"> ng-book 2
+    </a>
+    <div class="header item borderless">
+      <h1 class="ui header">
+        Angular 2 Simple Reddit
+      </h1>
+    </div>
+  </div>
+</div>
+
+<!--hello-world><hello-world>-->
+<div class="ui main text container">
+  <reddit [articles]="articles"></reddit>
+  <!-- <--- Our app loads here! -->
+
+</div>
+ <div class="ui grid posts">
+<div class="ui grid posts">
+ 
+<p> 
+{{articles | json}}
+</p>
+<reddit-article
+ *ngFor="let article of sortedArticles()"
+ [article]="article">
+ </reddit-article>
+
