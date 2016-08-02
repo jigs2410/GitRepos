@@ -1,0 +1,23 @@
+<div class = "ui menu">
+  <div class ="ui container">
+      <a href ="#" class ="header item">
+        <img class ="logo" src = "ng-book-2-minibook.png"/>
+          ng-book 2
+      </a>  
+      <div class = "header item borderless">
+        <h1 class = "hi header">
+          Angular 2 reddit clone
+         </h1> 
+       </div>
+  </div>
+ </div> 
+
+ <div class = "ui main text container">
+   <add-article [onAddArticle]="onAddArticleCallback" ></add-article>
+   <div class ="ui grid posts">
+      <article-component
+        *ngFor="let article of sortedArticles()"
+        [article] = "article">
+      </article-component>
+  </div>
+</div>
