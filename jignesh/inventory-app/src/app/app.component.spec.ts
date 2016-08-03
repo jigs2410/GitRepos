@@ -1,4 +1,4 @@
-/* tslint:disable:no-unused-variable */
+/* tslint:disable:no-unused-variable 
 
 import {
   beforeEach, beforeEachProviders,
@@ -21,3 +21,4 @@ describe('App: InventoryApp', () => {
     expect(app.title).toEqual('app works!');
   }));
 });
+*/
