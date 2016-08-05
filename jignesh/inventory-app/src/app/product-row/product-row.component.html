@@ -1,5 +1,9 @@
-<app-product-image [product]="product"> </app-product-image>
-<div class = "content">
+
+
+  <app-product-image [product]="product"> </app-product-image>
+  
+  <div class = "content">
+  <app-price-display [price] ="product.price"></app-price-display>
     <div class="header">{{product.name}}</div>
     <div class = "meta">
       <div class="product-sku">SKU #{{product.sku}}</div>
@@ -7,5 +11,6 @@
     <div class ="description">
      <app-product-department [product] = "product"></app-product-department>
     </div>
+
+
 </div>
-<app-price-display [price] ="product.price"></app-price-display>

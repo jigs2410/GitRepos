@@ -8,11 +8,14 @@ import {Product} from '../shared/product';
 @Component({
   moduleId: module.id,
   selector: 'app-product-row',
+  inputs : ['product'],
+  host : {'class' : 'item'},
   templateUrl: 'product-row.component.html',
   styleUrls: ['product-row.component.css'],
   directives : [PriceDisplayComponent,ProductDepartmentComponent,ProductImageComponent]
 })
 export class ProductRowComponent implements OnInit {
+
   product:Product;
 
   constructor() {}
