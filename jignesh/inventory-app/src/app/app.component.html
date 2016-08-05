@@ -1,4 +1,17 @@
-<!--div><h1> Hello </h1> </div-->
+<div class="ui menu">
+      <div class="ui container">
+        <a href="#" class="header item">
+          <img class="logo" src="resource/images/ng-book-2-minibook.png">
+          ng-book 2
+        </a>
+        <div class="header item borderless">
+          <h1 class="ui header">
+            Angular 2 Inventory App
+          </h1>
+        </div>
+      </div>
+    </div>
+
 
 <!--div *ngFor = "let product of products">
 <h1 >
@@ -8,7 +21,7 @@
 </div-->
 
 
-<h2>
-  <div> <app-product-list [productList]="products" (onProductSelected)="productWasSelected($event)"> </app-product-list></div>
- 
-  </h2>
+ <div class="ui main text container">
+  <app-product-list [productList]="products" (onProductSelected)="productWasSelected($event)"> </app-product-list>
+ </div>
+  
